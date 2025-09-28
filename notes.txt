@@ -1,0 +1,82 @@
+1. Design anayisis:
+
+--> Header Page:
+
+3 button --> one light color, 2 dark color
+2 image
+8 icons
+
+--> Body Page: --> body 1
+
+7 icons --> 6 card icons, 1 design icon
+
+Body Page: --> body 2
+
+8 icons --> 4 card per 2 icon
+4 image
+3 button
+
+Body page --> body 3
+
+3 image 
+7 icons --> 3 card per 2 icons, 1 design icon
+2 button --> dark and light
+
+Body Page --> body 4
+
+1 image
+1 icon
+2 button --> dark and light
+
+Body Page --> body 5
+
+3 icon
+4 image
+
+--> Footer Page
+
+7 icons
+1 button --> dark
+
+2. Font anayisis:
+
+Poppins 
+Volkhov
+Roboto
+Inter
+
+3. color anayisis:
+
+Header 
+FFFFFF-dark white, 222222-dark black, 444444-light black, 666666-grayblack, FA7436-dark orange, FEFCFB-light white, CCCCCC-gray, FD8D3A-light orange
+
+body 1
+FA7436, #FFB60A, #FFFFFF, #4086F4, #666666, #999999, #F5F9FF
+
+body 2
+FEFCFB, FFE7DB, 666666, 999999, FFFFFF, 000000
+
+body 3
+FEFCFB, 222222, 666666, 999999, 666666, FFFFFF
+
+body 4
+999999, FEFCFB, 4E4E73, 666666, F7F8FC, FFFFFF
+
+body 5
+999999, FA7436, 000000, FEFCFB
+
+Footer
+FFFFFF, 666666, 999999, F7F8FC, 
+
+
+
+
+
+
+
+
+
+
+
+
+
