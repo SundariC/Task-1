@@ -34,8 +34,8 @@ body {
     padding-bottom: 20px;
     background-color: var(--light-white);
     max-width: 1800px;
-    max-height: 999;
-    margin: auto;
+    max-height: 1000px;
+    margin-bottom:13em;
 }
 
 .header {
@@ -113,23 +113,21 @@ ul li a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 8em;
+    position: relative;
 }
 
 .left-side {
-    font-family: 'volkhov', serif;
-    max-width: 600px;
-    font-weight: bold;
-    font-size: 25px;
-    padding: 10px;
+    margin-left: 2em;
+    padding: 15px;
     display: flex;
     flex-direction: column;
     gap: 2px;
 }
 
 .left-side h1 {
-    font-size: 59px;
-    line-height: 1.2;
+    font-size: 55px;
+    line-height: 1.2em;
     color: var(--dark-black);
 }
 
@@ -138,11 +136,12 @@ ul li a {
 }
 
 .right-side img {
-    width: 785px;
-    height: 585;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 50px;
+    width: 750px;
+    margin-top:-18em;
+    margin-left:-48em;
+    height: auto;
+    position: absolute;
+
 }
 
 .hero-section .left-side p {
@@ -157,30 +156,32 @@ ul li a {
 .hero-section .left-side .btn {
     font-weight: normal;
     display: inline-block;
-    position: relative;
     font-size: 16px;
     font-family: 'poppins', sans-serif;
     text-decoration: none;
     color: var(--dark-orange);
-    border-radius: 0px;
-    padding: 10px 25px;
+    padding: 15px 22px;
     border-radius: 5px;
     margin-top: 30px;
+    margin-right:22em;
     border-color: var(--dark-orange);
     border: #FA7436 solid 1px;
 }
 
 .under-side {
-    margin: 4em 0;
-    display: flex;
-    align-items: center;
-    gap: 20px;
+    margin-left: 15em;
+    margin-top: 4em;
     font-size: 16px;
     font-family: 'poppins', sans-serif;
-    justify-content: center;
-
-    position: relative;
-    gap: 70px;
+    gap: 5em;
+    background: var(--dark-white);
+    display: flex;
+    border-radius: 5px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+    position: absolute;
 }
 
 .btn2-dark {
@@ -197,18 +198,6 @@ ul li a {
     padding: 10px 25px;
     border-radius: 5px;
     border: #FA7436 solid 1px;
-}
-
-.bg {
-    background: var(--dark-white);
-    display: flex;
-    border-radius: 5px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 60px 400px;
-    position: absolute;
-
 }
 
 .content h1 {
@@ -241,15 +230,20 @@ ul li a {
 
 .thank-boxes {
     display: flex;
-    margin: 5em;
+    margin: 3.3em;
     gap: 2em;
+    inline-size: fit-content;
+    flex-direction: row;
+    position: relative;
 }
-
-.body-card {
-    background-color: #ffffff;
-    padding: 1.5em 3em;
+.thank-boxes>div{
+    background-color: var(--dark-white);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    padding:2em;
+    gap:2em;
+    padding-top:4em;
+    z-index: 1;
 }
-
 .up-side {
     margin: 4em 0px;
     position: relative;
@@ -268,7 +262,6 @@ ul li a {
     text-align: center;
     color: var(--gray-black);
     font-size: 15px;
-
 }
 
 .up-side img {
@@ -317,24 +310,21 @@ ul li a {
     color: var(--dark-black);
     font-weight: 400;
     font-style: normal;
-    margin-left: 10px;
-    margin-bottom: 0;
+    align-items:baseline;
+    margin-left:1em;
+    margin-bottom:8px;
 }
 
 .rating {
     font-family: "poppins", sans-serif;
     font-size: 14px;
     color: var(--gray-black);
-    font-weight: 00;
     font-style: normal;
-    margin-left: 15em;
-    margin-bottom: em;
-    position: absolute;
-    z-index: auto;
-    margin-top: -4em;
+    margin-left: 13em;
+    margin-top: -3em;
     display: flex;
     flex-direction: row;
-    gap: 3px;
+    gap: 1em;
 }
 
 .discount {
@@ -343,16 +333,19 @@ ul li a {
     color: var(--gray-black);
     font-weight: 400;
     font-style: normal;
-    margin-left: 10px;
+    margin:2em;
     display: flex;
+    align-items: baseline;
     flex-direction: row;
     gap: 5px;
-    margin-bottom: 20px;
+   
 }
 
 .dollors {
     font-size: 15px;
-    margin-left: 5em;
+    margin:0;
+    gap: 3px;
+    margin-right:-3em;
 }
 
 .dollors .highlight1-lt {
@@ -361,11 +354,11 @@ ul li a {
 
 .highlight1 {
     color: var(--dark-orange);
-    margin: 3px;
+    margin: 2px;
     padding: 2px;
     background-color: #f8bb9845;
     border-radius: 3px;
-    padding: 0 5px;
+    right: 2em;
 }
 
 .btn3-dark {
@@ -382,7 +375,7 @@ ul li a {
 .booking {
     filter: brightness(50%);
 }
-
+/*<!--wrapper page4-->*/
 .wrapper.page4 {
     padding-top: 50px;
     padding-bottom: 20px;
@@ -398,25 +391,26 @@ ul li a {
     flex-direction: row;
     display: flex;
     gap: 1.5em;
-    background-color: var(--dark-white);
     padding-bottom: 2em;
+}
+.trip-image>div{
+    background-color: var(--dark-white);
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
-
 .city {
-    margin: 0;
-    padding: 1em;
     display: flex;
     flex-direction: row;
     color: var(--gray-black);
     font-family: 'poppins', sans-serif;
     font-size: 10px;
     font-style: normal;
-    justify-content: space-around;
+    padding: 0 3em;
+    justify-content: space-between;
+    align-items:baseline;
 }
 
 .highlight2 {
-    font-size: 15px;
+    font-size: 18px;
     color: var(--dark-orange);
     margin-top: 1.3em;
 }
@@ -428,24 +422,16 @@ ul li a {
 }
 
 .swipe-buttons2 {
-    margin-bottom: -4em;
-    padding-bottom: -5em;
-    /* margin-left:90em; */
-    z-index: 2em;
+    margin-left: 64em;
+    position: absolute;
+    margin-top: -4em;
 }
-
-.rating1 {
+.days{
     font-family: 'poppins', sans-serif;
     font-size: 10px;
     font-style: normal;
     color: var(--gray);
-    display: flex;
-    flex-direction: row;
-    margin: 1em;
-    padding: 2px;
-    align-items: baseline;
-    gap: 1em;
-    justify-content: space-around;
+    padding: 0 3em;
 }
 
 /* <!--wrapper page5--> */
@@ -474,21 +460,21 @@ ul li a {
     display: grid;
     gap: 1em;
 }
+.info-rightheading1{
+
+}
 
 .info-rightheading1 img {
     position: absolute;
-    margin-top: -2.5em;
     margin-left: -1.5em;
-    z-index: 3;
+    margin-top:-3em;
+    z-index: 4;
 }
 
 .info-flight {
     position: absolute;
-    justify-content: end;
-    align-items: flex-end;
-    display: flex;
-    margin-left: 65em;
-    margin-top: 2em;
+    margin-left: 63em;
+    margin-top: 1em;
 }
 
 .review1 {
@@ -524,10 +510,23 @@ ul li a {
     padding-bottom: 2em;
     padding-right: 28.6em;
     margin-left: 5em;
-    margin-top: 8em;
+    margin-top: 6em;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
-
+.infoname2 h1{
+    padding: 0;
+    margin:0;
+    padding-top:3em;
+}
+/* <!--wrapper page6--> */
+.trip-image1{
+    margin: 5em;
+    inline-size: fit-content;
+    flex-direction: row;
+    display: flex;
+    gap: 1.5em;
+    padding-bottom: 2em;
+}
 .blog h1 {
     font-size: 17px;
     font-family: 'poppins', sans-serif;
@@ -535,7 +534,11 @@ ul li a {
     color: var(--light-black);
     margin-bottom: -1em;
 }
-
+.swipe-buttons3 {
+    position: absolute;
+    margin-left: 39.5em;
+    margin-top: -3em;
+}
 .blog p {
     font-size: 13px;
     font-family: 'poppins' sans-serif;
@@ -543,6 +546,7 @@ ul li a {
     padding: 8px;
     color: var(--gray-black);
 }
+
 
 .wrapper.page7 {
     padding-top: 20px;
@@ -688,8 +692,8 @@ ul li a {
 }
 
 .social-icons a img {
-    width: 22px;
-    height: 22px;
+    width: 35px;
+    height: 35px;
     margin-right: 8px;
 }
 
