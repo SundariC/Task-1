@@ -244,6 +244,9 @@ ul li a {
     padding-top:4em;
     z-index: 1;
 }
+.thank-boxes img{
+    margin-top:-3em;
+}
 .up-side {
     margin: 4em 0px;
     position: relative;
@@ -321,7 +324,7 @@ ul li a {
     color: var(--gray-black);
     font-style: normal;
     margin-left: 13em;
-    margin-top: -3em;
+    margin-top: -3.5em;
     display: flex;
     flex-direction: row;
     gap: 1em;
@@ -338,7 +341,10 @@ ul li a {
     align-items: baseline;
     flex-direction: row;
     gap: 5px;
-   
+}
+.discount h1{
+    padding: 0 2em 0 0;
+    margin-right:1.5em;
 }
 
 .dollors {
@@ -364,7 +370,7 @@ ul li a {
 .btn3-dark {
     text-decoration: none;
     position: absolute;
-    bottom: 11em;
+    bottom: 13em;
     right: 27%;
     color: var(--dark-white);
     background-color: var(--dark-orange);
@@ -428,11 +434,30 @@ ul li a {
 }
 .days{
     font-family: 'poppins', sans-serif;
-    font-size: 10px;
+    font-size: 8px;
     font-style: normal;
     color: var(--gray);
-    padding: 0 3em;
+    padding: 2em;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
 }
+.rating1{
+    font-family: "poppins", sans-serif;
+    font-size: 14px;
+    color: var(--gray-black);
+    font-style: normal;
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+    margin-left:11em;
+}
+.rating1 img{
+    width:14px;
+    height:14px;
+    margin-top:1.1em;
+}
+
 
 /* <!--wrapper page5--> */
 .heading2 {
@@ -712,4 +737,100 @@ ul li a {
 
 .footer-bottom a:hover {
     color: #f47b42;
+}
+
+/*<!--Media queries-->*/
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 4em;
+    }
+
+    .hero-section .right-side img { 
+        position: absolute;
+        margin-left:  10 em;
+        max-width:  200px;
+        
+    }
+
+    .left-side h1 {
+        font-size: 32px;
+    }
+
+    .left-side p {
+        font-size: 16px;
+    }
+
+    .under-side {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 2em;
+        margin-top: 2em;
+    }
+
+    .under-side .btn2-dark {
+        position: static;
+        margin-top: 1em;
+    }
+
+    .thank-boxes {
+        flex-direction: column;
+        margin: 1em;
+    }
+
+    .offer-image {
+        flex-direction: column;
+        margin: 1em;
+    }
+
+    .swipe-buttons1 {
+        position: static;
+        margin-top: 1em;
+    }
+
+    .trip-image {
+        flex-direction: column;
+        margin: 1em;
+    }
+
+    .swipe-buttons2 {
+        position: static;
+        margin-top: 1em;
+    }
+
+    .info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .info-flight {
+        position: static;
+        margin-top: 1em;
+    }
+
+    .review1 {
+        position: static;
+        margin-top: 1em;
+    }
+
+    .infoname2 {
+        position: static;
+        margin-top: 1em;
+        padding-right: 2em;
+    }
+
+    .trip-image1 {
+        flex-direction: column;
+        margin: 1em;
+    }
+
+    .swipe-buttons3 {
+        position: static;
+        margin-top: 1em;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
 }
