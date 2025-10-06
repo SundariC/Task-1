@@ -834,3 +834,31 @@ ul li a {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
 }
+
+/* Mobile view  */
+@media screen and (max-width: 767px) {
+  .menu-icon {
+    display: block; /* show hamburger */
+  }
+
+  nav ul {
+    display: none; /* hide menu links */
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  /* When checkbox is checked, show the menu */
+  #menu-toggle:checked + .menu-icon + .nav-menu ul {
+    display: flex;
+  }
+
+  nav ul li {
+    padding: 10px 0;
+  }
+}
