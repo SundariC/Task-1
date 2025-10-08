@@ -79,4 +79,29 @@ FFFFFF, 666666, 999999, F7F8FC,
 
 
 
+dom session task
+<body>
+    <h1 class="text-center text-3xl text-red-700 head">
+      <i>Creating Multiple Element Session Task </i>
+    </h1>
+    <header class="headers">
+      <nav>
+        <ul class="flex justify-center space-evenly gap-8">
+          <li class="list-none text-black cursor-pointer">About</li>
+          <li class="list-none text-black cursor-pointer">Pricing</li>
+          <li class="list-none text-black cursor-pointer">Contact</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h1 class="text-center text-3xl text-red-700 head">
+          <i>Above all are created Dynamically</i>
+        </h1>
+      </section>
+    </main>
+  </body>
 
+  const heading=document.createElement("h1");
+  const heading1 = document.createElement("h1");
+  const navigation = document.

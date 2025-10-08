@@ -740,7 +740,7 @@ ul li a {
 }
 
 /*<!--Media queries-->*/
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .hero-section {
         flex-direction: column;
         text-align: center;
@@ -833,32 +833,175 @@ ul li a {
     .footer-container {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
-}
+} */
 
 /* Mobile view  */
 @media screen and (max-width: 767px) {
-  .menu-icon {
-    display: block; /* show hamburger */
+  body {
+    font-size: 14px;
+    overflow-x: hidden;
   }
 
-  nav ul {
-    display: none; /* hide menu links */
+  .header {
     flex-direction: column;
-    background-color: #333;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
+    position: relative;
     text-align: center;
-    padding: 10px 0;
   }
 
-  /* When checkbox is checked, show the menu */
-  #menu-toggle:checked + .menu-icon + .nav-menu ul {
-    display: flex;
+  .menu {
+    flex-direction: column;
+    gap: 15px;
+    background-color: var(--light-white);
+    padding: 15px 0;
   }
 
-  nav ul li {
-    padding: 10px 0;
+  .logo-box {
+    justify-content: center;
+  }
+
+  .hero-section {
+    flex-direction: column;
+    align-items: center;
+    margin: 2em 1em;
+  }
+
+  .left-side h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .hero-section .right-side img {
+    width: 250px;
+    margin: 0;
+    position: static;
+  }
+
+  .under-side {
+    flex-direction: column;
+    align-items: center;
+    margin: 2em auto;
+    width: 90%;
+  }
+
+  .thank-boxes,
+  .offer-image,
+  .trip-image,
+  .trip-image1 {
+    flex-direction: column;
+    align-items: center;
+    margin: 1.5em auto;
+    width: 90%;
+  }
+
+  .info {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .subscribe {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .subscribe h2 {
+    font-size: 28px;
+  }
+
+  .subscribe-form {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .subscribe-form button {
+    position: static;
+    margin-top: 10px;
+    width: 100%;
+  }
+}
+/* Tablet view*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+    overflow-x: hidden;
+  }
+
+  .header {
+    padding: 10px 20px;
+    position: relative;
+  }
+
+  .menu {
+    gap: 20px;
+    font-size: 15px;
+  }
+
+  .logo-box .logo-name {
+    font-size: 22px;
+  }
+
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 5em;
+  }
+
+  .left-side h1 {
+    font-size: 38px;
+  }
+
+  .left-side p {
+    font-size: 18px;
+  }
+
+  .hero-section .right-side img {
+    width: 400px;
+    position: static;
+    margin: 0 auto;
+  }
+
+  .under-side {
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 3em auto;
+    width: 90%;
+  }
+  .up-side img{
+    margin-left:10em;
+    display:flex;
+    position:absolute;
+  }
+
+  .thank-boxes,
+  .offer-image,
+  .trip-image,
+  .trip-image1 {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2em auto;
+  }
+  
+  
+  .info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subscribe {
+    width: 90%;
+    padding: 40px;
+  }
+
+  .subscribe h2 {
+    font-size: 36px;
+  }
+
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+    text-align: left;
   }
 }
