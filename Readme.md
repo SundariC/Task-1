@@ -11,7 +11,7 @@ This repository contains the solution for **Task 1** as part of the FSD-33 class
 
 1. Clone the repository:
     ```bash
-    git clone <repository-url>
+    git clone <https://github.com/SundariC/Task-1>
     ```
 2. Navigate to the project directory:
     ```bash
